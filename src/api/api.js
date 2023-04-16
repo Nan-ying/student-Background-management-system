@@ -28,37 +28,32 @@ export function studentDelApi(id) {
 }
 
 // 信息查询接口
-export function infoApi() {
-  return service({
-    method: "get",
-    url: "/info",
-  });
-}
+// export function infoApi() {
+//   return service({
+//     method: "get",
+//     url: "/info",
+//   });
+// }
 
-// 信息新增接口
-export function infoAddApi(data) {
-  data = qs.stringify(data);
-  return service({
-    method: "post",
-    url: "/info",
-    data,
-  });
-}
-
-// 信息修改接口
-export function infoEditApi(data) {
-  data = qs.stringify(data);
-  return service({
-    method: "put",
-    url: "/info",
-    data,
-  });
-}
+// 信息新增&修改接口
+// export function infoEditApi(type, data) {
+//   data = qs.stringify(data);
+//   let obj = { method: type, url: "/info", data };
+//   return service(obj);
+// }
 
 // 信息列表删除接口
-export function infoDelApi(id) {
+// export function infoDelApi(id) {
+//   return service({
+//     method: "delete",
+//     url: `/info/${id}`,
+//   });
+// }
+
+// 数据概览查询接口
+export function dataViewApi() {
   return service({
-    method: "delete",
-    url: `/info/${id}`,
+    method: "get",
+    url: "/dataview",
   });
 }

@@ -34,12 +34,6 @@ export default new Router({
           component: () => import("@/components/students/StudentList.vue"),
         },
         {
-          path: "/home/info",
-          name: "信息列表",
-          iconClass: "fa fa-list-alt",
-          component: () => import("@/components/students/InfoList.vue"),
-        },
-        {
           path: "/home/infos",
           name: "信息管理",
           iconClass: "fa fa-list-alt",
@@ -50,12 +44,6 @@ export default new Router({
           name: "作业列表",
           iconClass: "fa fa-list-ul",
           component: () => import("@/components/students/WorkList.vue"),
-        },
-        {
-          path: "/home/works",
-          name: "作业管理",
-          iconClass: "fa fa-th-list",
-          component: () => import("@/components/students/WorkManage.vue"),
         },
       ],
     },

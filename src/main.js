@@ -6,9 +6,11 @@ import "./assets/css/reset.css";
 import "font-awesome/css/font-awesome.min.css";
 import router from "./router";
 import service from "./service/service";
+import echarts from "echarts";
 
 Vue.use(ElementUI);
 Vue.prototype.service = service; // 挂载到原型，可以在全局中使用
+Vue.prototype.$echarts = echarts;
 
 Vue.config.productionTip = false;
 
