@@ -57,3 +57,11 @@ export function dataViewApi() {
     url: "/dataview",
   });
 }
+
+// 地图概览接口
+export function mapViewApi() {
+  return service({
+    method: "get",
+    url: "/travel",
+  });
+}

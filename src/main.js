@@ -12,6 +12,14 @@ Vue.use(ElementUI);
 Vue.prototype.service = service; // 挂载到原型，可以在全局中使用
 Vue.prototype.$echarts = echarts;
 
+router.beforeEach((to, from, next) => {
+  if (!localStorage.getItem("username")) {
+    if (to.path !== "/login") {
+      next("/login");
+    } else next();
+  } else next();
+});
+
 Vue.config.productionTip = false;
 
 new Vue({

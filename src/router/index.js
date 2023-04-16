@@ -66,12 +66,6 @@ export default new Router({
           component: () => import("@/components/dataAnalysis/MapView"),
         },
         {
-          path: "/home/travel",
-          name: "旅游地图",
-          iconClass: "fa fa-line-chart",
-          component: () => import("@/components/dataAnalysis/TravelMap"),
-        },
-        {
           path: "/home/score",
           name: "分数地图",
           iconClass: "fa fa-line-chart",
